@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #000;
+  height: 60px;
+  align-items: center;
+  align-content: center;
+}
+
+header .container {
+  align-items: center;
+}
+
+header .nav-1 {
+  display: flex;
+}
+
+header nav .logo {
+  color: #fff;
+  font-weight: bold;
+}
+
+header nav .logo .QS {
+  background-color: #f7a70d;
+  padding: 7px 5px;
+}
+
+header nav .logo .uni {
+  color: #f7a70d;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+header nav ul,
+header nav ul div {
+  list-style: none;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+header nav ul li {
+  margin: 0px 10px;
+  position: relative;
+}
+
+header nav ul li .apply,
+.signup {
+  background-color: #fff;
+  color: #1d1d1b;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  font-size: 14px;
+}
+
+header nav ul li .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 200px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 230%;
+  left: 0;
+}
+
+header nav ul li .dropdown-content a {
+  padding: 12px 16px;
+  color: #000;
+}
+
+header nav ul li .dropdown-content a:hover {
+  background-color: #f7a70d;
+}
+
+header nav ul li:hover .dropdown-content {
+  display: block;
+}
+
+.hero {
+  margin-top: 60px;
+  background-color: #f7a70d;
+  text-align: center;
+  padding: 50px 0 1px 0;
+}
+
+.hero .container {
+  width: 100%;
+}
+
+.hero .sec-1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero .sec-1 h1 {
+  font-size: 60px;
+  text-align: center;
+  align-content: end;
+}
+
+.hero .search-bar {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.hero .search-bar .inner-search {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: #f6f4e7;
+  margin: 70px;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.hero .search-bar input {
+  padding: 20px;
+  font-size: 18px;
+  width: 35%;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.hero .search-bar a {
+  font-size: 18px;
+  color: #fff;
+  padding: 20px 20px;
+  background-color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.rankings,
+.testimonials,
+.support,
+.scholarships,
+.partners {
+  padding: 70px 40px 20px 40px;
+}
+
+.rankings .container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.rankings .container .card {
+  width: 25%;
+  text-align: left;
+}
+
+.support .container .card {
+  width: 50%;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.support .container .card {
+  align-content: center;
+}
+
+.rankings .container .card img {
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.rankings .explore,
+.support .explore {
+  margin-top: 20px;
+}
+
+.rankings .explore a,
+.support .explore a {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #f7a70d;
+  color: #000;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.support {
+  background-color: #f6f4e7;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+.support .support-step {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.rankings .card,
+.support .support-step,
+.scholarships .scholarship-info {
+  background-color: #f6f4e7;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.rankings .card img,
+.support .support-step img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #f7a70d;
+  padding: 20px 10px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer-links a,
+footer .social-media a {
+  margin-right: 20px;
+  color: #000;
+  text-decoration: none;
+}
+
+footer .social-media img {
+  width: 24px;
+  height: 24px;
+}
+
+@media only screen and (max-width: 500px) {
+  header {
+    height: 200px;
+  }
+  header nav {
+    gap: 20px;
+  }
+
+  header nav ul {
+    gap: 20px;
+  }
+
+  .sec-1 img {
+    width: 70%;
+  }
+
+  .hero .sec-1 h1 {
+    font-size: 25px;
+  }
+  .hero .search-bar .inner-search {
+    gap: 10px;
+    margin: 40px;
+  }
+  .hero .search-bar input {
+    padding: 15px;
+    font-size: 14px;
+    width: 90%;
+  }
+  .rankings .container .card,
+  .support .container .card {
+    width: 100%;
+    text-align: left;
+  }
+
+  .support .support-step:nth-child(2n) {
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 1100px) {
+  header {
+    height: 150px;
+  }
+  header nav {
+    gap: 20px;
+  }
+  header nav ul {
+    gap: 20px;
+  }
+  .hero .sec-1 h1 {
+    font-size: 45px;
+  }
+  .hero .search-bar .inner-search {
+    gap: 10px;
+  }
+  .hero .search-bar input {
+    padding: 15px;
+    font-size: 14px;
+    width: 90%;
+  }
+  .rankings .container .card,
+  .support .container .card {
+    width: 70%;
+  }
+  .support .support-step:nth-child(2n) {
+    flex-direction: column-reverse;
+  }
+}
